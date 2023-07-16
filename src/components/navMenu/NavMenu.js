@@ -19,8 +19,8 @@ export const NavMenu = ({ show }) => {
           </a>
         </li>
         <li className="navMenu flex border-2 border-solid border-black border-b-0 hover:border-b-2 w-full hover:-translate-y-1 hover:-translate-x-1  hover:border-t-2 bg-white transition cursor-pointer">
-          <a href="/#services" className="w-full  text-center py-3">
-            Services
+          <a href="/#package" className="w-full  text-center py-3">
+            Package
           </a>
         </li>
         <li className="navMenu flex border-2 border-solid border-black w-full hover:-translate-y-1 hover:-translate-x-1  bg-white transition cursor-pointer">

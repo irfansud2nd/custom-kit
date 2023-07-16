@@ -56,11 +56,11 @@ export const Navbar = () => {
         </li>
         <li>
           <a href="/#" className="text-4xl">
-            YourBrand
+            Custom Kit
           </a>
         </li>
         <li className="hidden md:block">
-          <a href="/#services">Services</a>
+          <a href="/#package">Package</a>
         </li>
         <li className="hidden md:block">
           <a href="/#contact">Contact Us</a>

@@ -22,7 +22,7 @@ export const ServicesPreview = () => {
 
   return (
     <div
-      id="services"
+      id="package"
       className="w-full min-h-screen flex justify-start items-center"
     >
       <div
