@@ -10,7 +10,7 @@ export const ProductItem = ({
   return (
     <li className="mb-3">
       <a
-        href=""
+        href={href}
         onMouseOver={(e) => onMouseOver(e)}
         onMouseLeave={onMouseLeave}
         id={id}

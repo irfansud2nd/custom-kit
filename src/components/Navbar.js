@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavMenu } from "./navMenu/NavMenu";
-import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [showNavbar, setShowNavbar] = useState(true);
-
-  const navigate = useNavigate();
+  const [transparet, setTransparent] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", navbarAutoHide);
@@ -21,6 +19,11 @@ export const Navbar = () => {
       setShowNavbar(false);
     } else {
       setShowNavbar(true);
+    }
+    if (window.scrollY > window.innerHeight) {
+      setTransparent(false);
+    } else {
+      setTransparent(true);
     }
     setLastScrollPos(window.scrollY);
   };
@@ -45,6 +48,7 @@ export const Navbar = () => {
     <div
       className={`
     ${showNavbar ? "top-0" : "-top-full"}
+    ${transparet ? "" : "bg-custom-white"}
     w-full fixed z-10 flex justify-center p-1 transition-all duration-400`}
     >
       <ul className="flex justify-center md:justify-between items-center w-4/5">
@@ -55,8 +59,11 @@ export const Navbar = () => {
           <a href="/product">Products</a>
         </li>
         <li>
-          <a href="/#" className="text-4xl">
-            Custom Kit
+          <a
+            href="/#"
+            className="text-3xl bg-custom-white italic border-2 border-black pr-2 rounded-lg"
+          >
+            CUSTOM<span className="font-bold">KIT</span>
           </a>
         </li>
         <li className="hidden md:block">

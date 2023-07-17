@@ -9,7 +9,7 @@ export const ProductPreviewCard = ({ heading, img }) => {
   };
   return (
     <div
-      className="w-full max-h-full bg-white overflow-hidden relative grid grid-cols-1 grid-rows-[50px_minmax(0,_1fr)] sm:grid-rows-[.5fr_minmax(0,_1fr)] rounded-md p-3"
+      className="w-full max-h-full bg-custom-white overflow-hidden relative grid grid-cols-1 grid-rows-[50px_minmax(0,_1fr)] sm:grid-rows-[1fr_minmax(0,_1fr)] rounded-md p-3"
       onMouseEnter={toggleHovered}
       onMouseLeave={toggleHovered}
     >

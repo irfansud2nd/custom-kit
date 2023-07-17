@@ -1,63 +1,45 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Slide } from "./Slide";
-import forRight from "./../../img/forRight.svg";
-import forLeft from "./../../img/forLeft.svg";
+import slideOneImage from "./../../img/slide-1.png";
+import slideTwoImage from "./../../img/slide-2.png";
+import slideThreeImage from "./../../img/slide-3.png";
+import slideFourImage from "./../../img/slide-4.png";
 
 export const Slides = () => {
   return (
     <div>
       <Slide
-        className="bg-red-500 z-[3]"
-        heading="Lorem ipsum dolor sit amet."
+        className="bg-custom-blue-dark text-custom-white z-[3]"
+        heading="Easy Installation"
         text="
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            dolore reiciendis, incidunt eum perferendis asperiores. Nemo
-            accusamus temporibus alias necessitatibus reprehenderit ipsa aliquid
-            consequuntur molestiae nostrum odio iste, ipsum magni quas sed. Quo
-            maiores repellendus labore soluta quia omnis earum fugiat fugit,
-            quasi incidunt rerum, corrupti sed reprehenderit obcaecati saepe!
+            Everything is plug and play, you don't need to customize your chasis or anityng else. Just install the custom kit with bolt to the hole that already exist on your bike. 
           "
-        img={forRight}
+        img={slideOneImage}
       />
       <Slide
-        className="bg-yellow-500 z-[2]"
-        heading="Lorem ipsum dolor sit amet."
+        className="bg-custom-blue-light z-[2]"
+        heading="It wont ruin your bike"
         text="
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            dolore reiciendis, incidunt eum perferendis asperiores. Nemo
-            accusamus temporibus alias necessitatibus reprehenderit ipsa aliquid
-            consequuntur molestiae nostrum odio iste, ipsum magni quas sed. Quo
-            maiores repellendus labore soluta quia omnis earum fugiat fugit,
-            quasi incidunt rerum, corrupti sed reprehenderit obcaecati saepe!
+            Because Everything is plug and play, you can easily make your bike back to its original form without any defect. 
           "
-        img={forLeft}
+        img={slideTwoImage}
         left
       />
       <Slide
-        className="bg-blue-500 z-[1]"
-        heading="Lorem ipsum dolor sit amet."
+        className="bg-custom-blue-dark text-custom-white z-[1]"
+        heading="Lot of varieties"
         text="
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            dolore reiciendis, incidunt eum perferendis asperiores. Nemo
-            accusamus temporibus alias necessitatibus reprehenderit ipsa aliquid
-            consequuntur molestiae nostrum odio iste, ipsum magni quas sed. Quo
-            maiores repellendus labore soluta quia omnis earum fugiat fugit,
-            quasi incidunt rerum, corrupti sed reprehenderit obcaecati saepe!
+            You can buy the whole package, like Scrambler kit, Caferacer kit and other kits. or you can combine it the way you like it.
           "
-        img={forRight}
+        img={slideThreeImage}
       />
       <Slide
-        className="bg-green-500"
-        heading="Lorem ipsum dolor sit amet."
+        className="bg-custom-blue-light"
+        heading="High Quality"
         text="
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            dolore reiciendis, incidunt eum perferendis asperiores. Nemo
-            accusamus temporibus alias necessitatibus reprehenderit ipsa aliquid
-            consequuntur molestiae nostrum odio iste, ipsum magni quas sed. Quo
-            maiores repellendus labore soluta quia omnis earum fugiat fugit,
-            quasi incidunt rerum, corrupti sed reprehenderit obcaecati saepe!
+           We always maintin our high quality and the consistency for our beloved customers.
           "
-        img={forLeft}
+        img={slideFourImage}
         left
       />
     </div>

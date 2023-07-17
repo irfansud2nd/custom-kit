@@ -1,21 +1,19 @@
 import React from "react";
 import { MainHome } from "../components/home/MainHome";
 import { Slides } from "../components/home/Slides";
-import { Features } from "../components/home/Features";
 import { ProductPreview } from "../components/home/ProductPreview";
-import { ServicesPreview } from "../components/home/ServicesPreview";
+import { PackagesPreview } from "../components/home/PackagesPreview";
 import { Contact } from "../components/home/Contact";
 import { Navbar } from "../components/Navbar";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen w-full text-md">
+    <div className="min-h-screen w-full text-md text-custom-black bg-custom-white">
       <Navbar />
       <MainHome />
       <Slides />
-      <Features />
       <ProductPreview />
-      <ServicesPreview />
+      <PackagesPreview />
       <Contact />
     </div>
   );

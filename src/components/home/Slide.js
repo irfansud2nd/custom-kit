@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 
@@ -14,7 +14,7 @@ export const Slide = ({ className = "", left = false, img, heading, text }) => {
   return (
     <div
       id="about"
-      className={`${className} w-full h-screen flex justify-center items-center sticky bottom-0`}
+      className={`${className} w-full h-screen flex justify-center items-center sticky bottom-0 mt-10`}
     >
       <AnimationOnScroll
         className="flex justify-center max-h-full"
@@ -25,15 +25,18 @@ export const Slide = ({ className = "", left = false, img, heading, text }) => {
       >
         <div
           className="
-        w-3/4 
+        w-4/5 
         grid 
         max-h-full
         grid-rows-1
         md:grid-cols-2 
         md:gap-10
-        md:items-center"
+        md:place-items-center
+        "
         >
-          {left ? <img src={img} className="h-full hidden md:block" /> : null}
+          {left ? (
+            <img src={img} className="h-full hidden md:block rounded" />
+          ) : null}
           <div
             className="
           grid 
@@ -42,13 +45,15 @@ export const Slide = ({ className = "", left = false, img, heading, text }) => {
           place-items-center 
           md:block"
           >
-            <h1 className="font-extrabold text-4xl">{heading}</h1>
+            <h1 className="font-extrabold text-4xl mb-5">{heading}</h1>
             <div className="h-full flex justify-center items-center md:hidden">
-              <img src={img} className="h-full" />
+              <img src={img} className="h-full rounded" />
             </div>
             <p className="text-justify">{text}</p>
           </div>
-          {left ? null : <img src={img} className="h-full hidden md:block" />}
+          {left ? null : (
+            <img src={img} className="h-full hidden md:block rounded" />
+          )}
         </div>
       </AnimationOnScroll>
     </div>

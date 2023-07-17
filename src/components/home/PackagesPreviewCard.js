@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-export const ServicesPreviewCard = ({
+export const PackagesPreviewCard = ({
   setShowDetail,
   showDetail,
   index,
   heading,
-  desc,
   pricing,
   thumbnail,
+  kit,
 }) => {
   const [showPricing, setShowPricing] = useState(false);
 
@@ -30,31 +30,31 @@ export const ServicesPreviewCard = ({
       min-h-[500px] h-[80vh] min-h flex-none transition-all relative`}
     >
       <div
-        className="w-[400px] sm:max-w-[85vw] h-full bg-red-300 absolute overflow-hidden rounded-lg"
+        className="w-[400px] sm:max-w-[85vw] h-full bg-custom-black absolute overflow-hidden rounded-lg "
         onClick={toggleDetail}
       >
-        <div className="relative h-full hover:scale-[1.05] transition-all cursor-pointer">
-          <img src={thumbnail} className="object-cover w-full h-full" />
-          <h1 className="absolute top-0 h-full w-full flex text-center items-center font-extrabold text-7xl">
+        <div className="relative h-full  transition-all cursor-pointer hover:scale-[1.05]">
+          <img src={thumbnail} className="object-cover h-full w-full" />
+          <h1 className="absolute top-0 h-full w-full flex text-center items-center font-extrabold text-7xl text-custom-black drop-shadow-[2px_2px_2px_var(--tw-shadow-color)] shadow-custom-white hover:scale-[.95] transition-all">
             {heading}
           </h1>
         </div>
       </div>
       <div></div>
-      <div className="ml-3 bg-gray-500 p-2 rounded-lg grid grid-rows-[.5fr_.8fr_minmax(0,_5fr)]">
+      <div className="ml-3 text-custom-white bg-custom-black p-2 rounded-lg grid grid-rows-[.5fr_.8fr_minmax(0,_5fr)]">
         <h1 className="text-center font-bold text-4xl">{heading}</h1>
-        <div className="grid grid-cols-2 bg-gray-300 mx-3 my-4 rounded-md">
+        <div className="grid grid-cols-2 bg-custom-blue-dark mx-3 my-4 rounded-md">
           <span
             className={`
-            ${showPricing ? "" : "bg-white"} 
+            ${showPricing ? "" : "bg-custom-blue"} 
             w-full h-full flex justify-center items-center rounded-l-md cursor-pointer`}
             onClick={() => setShowPricing(false)}
           >
-            description
+            Description
           </span>
           <span
             className={`
-            ${showPricing ? "bg-white" : ""} 
+            ${showPricing ? "bg-custom-blue" : ""} 
             w-full h-full flex justify-center items-center rounded-r-md cursor-pointer`}
             onClick={() => setShowPricing(true)}
           >
@@ -64,14 +64,19 @@ export const ServicesPreviewCard = ({
         <div
           className={`${
             showPricing ? "hidden" : ""
-          } w-full h-full p-4 text-justify flex flex-col justify-center items-center `}
+          } w-full h-full p-4 text-justify flex flex-col justify-center items-center -mt-5`}
         >
-          {desc}
+          <p>This kit includes :</p>
+          <ul className="list-disc ml-16">
+            {kit.map((item) => {
+              return <li key={item}>{item}</li>;
+            })}
+          </ul>
         </div>
         <div
           className={`${
             showPricing ? "" : "hidden"
-          } w-full h-full p-4 text-justify flex flex-col justify-center items-center`}
+          } w-full h-full p-4 text-justify flex flex-col justify-center items-center -mt-5`}
         >
           <p>Only start from</p>
           {pricing}

@@ -21,9 +21,9 @@ export const ImageBorder = ({ img, show }) => {
         "
           />
           <img src={img} className="h-full rotate-[25deg] place-self-start" />
-          <img src={img} className="h-full rotate-[100] " />
-          <img src={img} className="h-full rotate-[100] place-self-end" />
-          <img src={img} className="h-full rotate-[25] place-self-end" />
+          <img src={img} className="h-full rotate-[90deg] " />
+          <img src={img} className="h-full rotate-[130deg] place-self-end" />
+          <img src={img} className="h-full rotate-[25deg] place-self-end" />
         </div>
         {/* from Left */}
         <div
@@ -55,9 +55,9 @@ export const ImageBorder = ({ img, show }) => {
         "
           />
           <img src={img} className="h-full rotate-[25deg] place-self-start" />
-          <img src={img} className="h-full rotate-[100] " />
-          <img src={img} className="h-full rotate-[100] place-self-end" />
-          <img src={img} className="h-full rotate-[25] place-self-end" />
+          <img src={img} className="h-full rotate-[90deg] " />
+          <img src={img} className="h-full rotate-[130deg] place-self-end" />
+          <img src={img} className="h-full rotate-[25deg] place-self-end" />
         </div>
       </div>
     </div>
