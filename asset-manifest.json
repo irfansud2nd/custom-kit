@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/custom-kit/static/css/main.a1981f9c.css",
+    "main.js": "/custom-kit/static/js/main.516d4588.js",
+    "static/media/slide-3.png": "/custom-kit/static/media/slide-3.c7c8313afd986d512446.png",
+    "static/media/xsr155-tracker.jpg": "/custom-kit/static/media/xsr155-tracker.241d2d6b2efcdd84c478.jpg",
+    "static/media/main-home.png": "/custom-kit/static/media/main-home.52b4bdae0cca20d5791e.png",
+    "static/media/slide-1.png": "/custom-kit/static/media/slide-1.039957b5670e1158d28d.png",
+    "static/media/slide-2.png": "/custom-kit/static/media/slide-2.350937c52c7814a81186.png",
+    "static/media/fairing.png": "/custom-kit/static/media/fairing.bd72b09a36c5a41c1a03.png",
+    "static/media/seat.png": "/custom-kit/static/media/seat.03bc0acde1ab0b8f0972.png",
+    "static/media/engine-cover.png": "/custom-kit/static/media/engine-cover.a217403377d3903d5e10.png",
+    "static/media/fender.png": "/custom-kit/static/media/fender.ebb09d0661bcdfb13016.png",
+    "static/media/slide-4.png": "/custom-kit/static/media/slide-4.cb5069ed3079dcf8781a.png",
+    "static/media/pe250-bobber.jpg": "/custom-kit/static/media/pe250-bobber.49c269903e23ed10684c.jpg",
+    "static/media/xsr155-cafe.jpg": "/custom-kit/static/media/xsr155-cafe.06017286ad5e4d5f8788.jpg",
+    "static/media/hornet.png": "/custom-kit/static/media/hornet.320fc3c78fe8597451fe.png",
+    "static/media/w175-tracker.jpg": "/custom-kit/static/media/w175-tracker.488aecfe43ad64421b40.jpg",
+    "static/media/pe250-benni.jpg": "/custom-kit/static/media/pe250-benni.a374c5f9c3cb1b93aa13.jpg",
+    "static/media/w175-caferacer.jpg": "/custom-kit/static/media/w175-caferacer.6de549477efd6f98291a.jpg",
+    "static/media/swing-arm.png": "/custom-kit/static/media/swing-arm.1b78bdcf65cfd5eb0d58.png",
+    "static/media/exhaust.png": "/custom-kit/static/media/exhaust.741a8c894411f722363e.png",
+    "static/media/seat-detail.jpg": "/custom-kit/static/media/seat-detail.72ba9652d0aa2251f733.jpg",
+    "static/media/fender-detail.jpg": "/custom-kit/static/media/fender-detail.12d793660abda915489b.jpg",
+    "static/media/hornet-detail.jpg": "/custom-kit/static/media/hornet-detail.7970cbcab173f031007a.jpg",
+    "static/media/engine-cover-detail.jpg": "/custom-kit/static/media/engine-cover-detail.ff04c8c08315056c1d03.jpg",
+    "static/media/handlebar.png": "/custom-kit/static/media/handlebar.a797b43c9cac4c423506.png",
+    "static/media/fairing-detail.jpg": "/custom-kit/static/media/fairing-detail.9bb731ab8da61c8a19c9.jpg",
+    "static/media/handlebar-detail.jpg": "/custom-kit/static/media/handlebar-detail.7399de267df1de11aa70.jpg",
+    "static/media/exhaust-detail.jpg": "/custom-kit/static/media/exhaust-detail.4e13ce2b0d13bf4d6ceb.jpg",
+    "static/media/swing-arm-detail.jpg": "/custom-kit/static/media/swing-arm-detail.ba6cb1aaff331a237be7.jpg",
+    "index.html": "/custom-kit/index.html",
+    "main.a1981f9c.css.map": "/custom-kit/static/css/main.a1981f9c.css.map",
+    "main.516d4588.js.map": "/custom-kit/static/js/main.516d4588.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1981f9c.css",
+    "static/js/main.516d4588.js"
+  ]
+}
