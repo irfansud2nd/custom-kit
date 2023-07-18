@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "animate.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const ProductPreviewCard = ({ heading, img, navigateTo }) => {
   const [hovered, setHovered] = useState(false);
@@ -12,11 +13,11 @@ export const ProductPreviewCard = ({ heading, img, navigateTo }) => {
   const navigate = useNavigate();
 
   return (
-    <div
+    <Link
+      to={navigateTo}
       className="w-full max-h-full bg-custom-white overflow-hidden relative grid grid-cols-1 grid-rows-[50px_minmax(0,_1fr)] sm:grid-rows-[1fr_minmax(0,_1fr)] rounded-md p-3 cursor-pointer"
       onMouseEnter={toggleHovered}
       onMouseLeave={toggleHovered}
-      onClick={() => navigate(navigateTo)}
     >
       <div
         className={`w-[200%] top-0 left-0 grid grid-cols-2 ${
@@ -38,6 +39,6 @@ export const ProductPreviewCard = ({ heading, img, navigateTo }) => {
         <img src={img} className="h-full" />
         <img src={img} className="h-full" />
       </div>
-    </div>
+    </Link>
   );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const NavMenu = ({ show }) => {
   return (
@@ -9,24 +11,27 @@ export const NavMenu = ({ show }) => {
     >
       <ul>
         <li className="navMenu flex border-2 border-solid border-black border-b-0 hover:border-b-2  w-full hover:-translate-y-1 hover:-translate-x-1  bg-white transition cursor-pointer">
-          <a href="/#about" className="w-full  text-center py-3">
+          {/* <a href="/#about" className="w-full  text-center py-3">
             About
-          </a>
+          </a> */}
+          <HashLink to="/#about" className="w-full  text-center py-3">
+            About
+          </HashLink>
         </li>
         <li className="navMenu flex border-2 border-solid border-black border-b-0 hover:border-b-2 w-full hover:-translate-y-1 hover:-translate-x-1  hover:border-t-2 bg-white transition cursor-pointer">
-          <a href="/product" className="w-full  text-center py-3">
+          <Link to="/product" className="w-full  text-center py-3">
             Product
-          </a>
+          </Link>
         </li>
         <li className="navMenu flex border-2 border-solid border-black border-b-0 hover:border-b-2 w-full hover:-translate-y-1 hover:-translate-x-1  hover:border-t-2 bg-white transition cursor-pointer">
-          <a href="/#package" className="w-full  text-center py-3">
-            Package
-          </a>
+          <HashLink to="/#package" className="w-full  text-center py-3">
+            Packages
+          </HashLink>
         </li>
         <li className="navMenu flex border-2 border-solid border-black w-full hover:-translate-y-1 hover:-translate-x-1  bg-white transition cursor-pointer">
-          <a href="/#contact" className="w-full  text-center py-3">
-            Contact
-          </a>
+          <HashLink to="/#contact" className="w-full  text-center py-3">
+            Contact Us
+          </HashLink>
         </li>
       </ul>
     </div>

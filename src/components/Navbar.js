@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavMenu } from "./navMenu/NavMenu";
 import { List } from "react-bootstrap-icons";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -57,24 +58,26 @@ export const Navbar = () => {
     >
       <ul className="flex justify-center md:justify-between items-center w-4/5">
         <li className="hidden md:block cursor-pointer">
-          <a onClick={() => navigate("/#about")}>About</a>
+          <HashLink to="/#about">About</HashLink>
         </li>
         <li className="hidden md:block cursor-pointer">
-          <a onClick={() => navigate("/product")}>Products</a>
+          <Link to="/product">Product</Link>
         </li>
         <li>
           <a
             href="/#"
             className="text-3xl bg-custom-white italic border-2 border-black pr-2 rounded-lg font-sans"
           >
-            CUSTOM<span className="font-bold">KIT</span>
+            <HashLink to="/#">
+              CUSTOM<span className="font-bold">KIT</span>
+            </HashLink>
           </a>
         </li>
         <li className="hidden md:block cursor-pointer">
-          <a href="custom-kit/#package">Package</a>
+          <HashLink to="/#package">Packages</HashLink>
         </li>
         <li className="hidden md:block cursor-pointer">
-          <a href="custom-kit/#contact">Contact Us</a>
+          <HashLink to="/#contact">Contact Us</HashLink>
         </li>
         <button
           className={`
