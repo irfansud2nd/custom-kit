@@ -12,7 +12,7 @@ import { SwingArm } from "./pages/product/SwingArm";
 
 function App() {
   return (
-    <Router basename="/custom-kit">
+    <Router basename="/custom-kit/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />

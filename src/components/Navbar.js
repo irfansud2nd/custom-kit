@@ -1,12 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavMenu } from "./navMenu/NavMenu";
 import { List } from "react-bootstrap-icons";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [showNavbar, setShowNavbar] = useState(true);
   const [transparet, setTransparent] = useState(true);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener("scroll", navbarAutoHide);
@@ -53,11 +56,11 @@ export const Navbar = () => {
     w-full fixed z-10 flex justify-center p-1 transition-all duration-400`}
     >
       <ul className="flex justify-center md:justify-between items-center w-4/5">
-        <li className="hidden md:block">
-          <a href="/#about">About</a>
+        <li className="hidden md:block cursor-pointer">
+          <a onClick={() => navigate("/#about")}>About</a>
         </li>
-        <li className="hidden md:block">
-          <a href="/product">Products</a>
+        <li className="hidden md:block cursor-pointer">
+          <a onClick={() => navigate("/product")}>Products</a>
         </li>
         <li>
           <a
@@ -67,11 +70,11 @@ export const Navbar = () => {
             CUSTOM<span className="font-bold">KIT</span>
           </a>
         </li>
-        <li className="hidden md:block">
-          <a href="/#package">Package</a>
+        <li className="hidden md:block cursor-pointer">
+          <a href="custom-kit/#package">Package</a>
         </li>
-        <li className="hidden md:block">
-          <a href="/#contact">Contact Us</a>
+        <li className="hidden md:block cursor-pointer">
+          <a href="custom-kit/#contact">Contact Us</a>
         </li>
         <button
           className={`
