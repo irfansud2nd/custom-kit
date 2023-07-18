@@ -8,7 +8,7 @@ export const ProductItem = ({
   children,
 }) => {
   return (
-    <li className="mb-3">
+    <li className="mb-4">
       <a
         href={href}
         onMouseOver={(e) => onMouseOver(e)}

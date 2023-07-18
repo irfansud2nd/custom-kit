@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavMenu } from "./navMenu/NavMenu";
+import { List } from "react-bootstrap-icons";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -61,7 +62,7 @@ export const Navbar = () => {
         <li>
           <a
             href="/#"
-            className="text-3xl bg-custom-white italic border-2 border-black pr-2 rounded-lg"
+            className="text-3xl bg-custom-white italic border-2 border-black pr-2 rounded-lg font-sans"
           >
             CUSTOM<span className="font-bold">KIT</span>
           </a>
@@ -72,14 +73,14 @@ export const Navbar = () => {
         <li className="hidden md:block">
           <a href="/#contact">Contact Us</a>
         </li>
-        <div
+        <button
           className={`
           ${showMenu ? "hidden" : "absolute"}
           navMenu md:hidden  right-0 mr-2 border-2 border-solid border-black p-1 rounded-lg cursor-pointer`}
           onClick={() => setShowMenu(true)}
         >
-          menu
-        </div>
+          <List className="navMenu text-2xl" />
+        </button>
         <NavMenu show={showMenu} />
       </ul>
     </div>

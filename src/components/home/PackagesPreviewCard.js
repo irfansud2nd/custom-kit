@@ -27,7 +27,7 @@ export const PackagesPreviewCard = ({
           ? " w-[800px] grid grid-cols-2"
           : " w-[400px] sm:max-w-[85vw] grid grid-cols-[0,1fr]"
       }  
-      min-h-[500px] h-[80vh] min-h flex-none transition-all relative`}
+      min-h-[500px] h-[80vh] min-h flex-none transition-all duration-1000 relative`}
     >
       <div
         className="w-[400px] sm:max-w-[85vw] h-full bg-custom-black absolute overflow-hidden rounded-lg "
@@ -41,7 +41,7 @@ export const PackagesPreviewCard = ({
         </div>
       </div>
       <div></div>
-      <div className="ml-3 text-custom-white bg-custom-black p-2 rounded-lg grid grid-rows-[.5fr_.8fr_minmax(0,_5fr)]">
+      <div className="ml-3 text-custom-white bg-custom-black p-2 rounded-lg grid grid-rows-[.5fr_.8fr_minmax(0,_5fr)] max-h-full overflow-y-auto">
         <h1 className="text-center font-bold text-4xl">{heading}</h1>
         <div className="grid grid-cols-2 bg-custom-blue-dark mx-3 my-4 rounded-md">
           <span
@@ -78,8 +78,8 @@ export const PackagesPreviewCard = ({
             showPricing ? "" : "hidden"
           } w-full h-full p-4 text-justify flex flex-col justify-center items-center -mt-5`}
         >
-          <p>Only start from</p>
-          {pricing}
+          <p className="text-2xl font-bold">Only start from</p>
+          <span className="text-xl">Rp.{pricing}</span>
         </div>
       </div>
     </div>

@@ -16,14 +16,46 @@ export const ProductPreview = () => {
         Product Preview
       </h2>
       <div className="grid grid-rows-8 grid-cols-1 md:grid-rows-4 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-4 gap-10 px-7 pb-5 max-h-full mb-5">
-        <ProductPreviewCard heading="Fender" img={fenderImage} />
-        <ProductPreviewCard heading="Fairing" img={fairingImage} />
-        <ProductPreviewCard heading="Handle Bar" img={handlebarImage} />
-        <ProductPreviewCard heading="Engine Cover" img={engineCoverImage} />
-        <ProductPreviewCard heading="Hornet" img={hornetImage} />
-        <ProductPreviewCard heading="Exhaust" img={exhaustImage} />
-        <ProductPreviewCard heading="Seat" img={seatImage} />
-        <ProductPreviewCard heading="Swing Arm" img={swingArmImage} />
+        <ProductPreviewCard
+          heading="Fender"
+          img={fenderImage}
+          navigateTo="/product/fender"
+        />
+        <ProductPreviewCard
+          heading="Fairing"
+          img={fairingImage}
+          navigateTo="/product/fairing"
+        />
+        <ProductPreviewCard
+          heading="Handle Bar"
+          img={handlebarImage}
+          navigateTo="/product/handlebar"
+        />
+        <ProductPreviewCard
+          heading="Engine Cover"
+          img={engineCoverImage}
+          navigateTo="/product/enginecover"
+        />
+        <ProductPreviewCard
+          heading="Hornet"
+          img={hornetImage}
+          navigateTo="/product/hornet"
+        />
+        <ProductPreviewCard
+          heading="Exhaust"
+          img={exhaustImage}
+          navigateTo="/product/exhaust"
+        />
+        <ProductPreviewCard
+          heading="Seat"
+          img={seatImage}
+          navigateTo="/product/seat"
+        />
+        <ProductPreviewCard
+          heading="Swing Arm"
+          img={swingArmImage}
+          navigateTo="/product/swingarm"
+        />
       </div>
     </div>
   );

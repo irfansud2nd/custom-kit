@@ -8,9 +8,9 @@ export const MainHome = () => {
   }, []);
   return (
     <div
-      className={`w-full h-screen flex justify-center items-center relative whitespace-nowrap text-[4rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] transition-all font-extrabold `}
+      className={`w-full h-screen flex justify-center items-center relative whitespace-nowrap text-[4rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] transition-all font-extrabold font-lobster text-custom-blue-dark`}
     >
-      <h1 className="absolute bottom-[59%] sm:bottom-[55%] md:bottom-[53%] lg:bottom-[50%] z-[0] animate__animated animate__bounceIn drop-shadow-[2px_2px_2px_var(--tw-shadow-color)] shadow-custom-blue">
+      <h1 className="absolute bottom-[56%] sm:bottom-[55%] md:bottom-[53%] lg:bottom-[50%] z-[0] animate__animated animate__bounceIn drop-shadow-[2px_2px_2px_var(--tw-shadow-color)] shadow-custom-blue">
         Bolt-On
       </h1>
       <img

@@ -8,7 +8,7 @@ import { Navbar } from "../components/Navbar";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen w-full text-md text-custom-black bg-custom-white">
+    <div className="min-h-screen w-full text-md text-custom-black bg-custom-white font-poppins">
       <Navbar />
       <MainHome />
       <Slides />
